@@ -1,6 +1,6 @@
 survey:
-   name: My Survey
-   description: Custom Productivity and Improvement Planning survey
+   name: Scientific Software Excellence Assessment
+   description: A tool that allows developers to assess their progress towards sustainable and quality code using software engineering best practices.
 
    scores:
     - name: None
@@ -187,8 +187,8 @@ survey:
           - Sponsors are very satisfied
 
 
-    - name: Better Performance
-      path: performance
+    - name: Maturity
+      path: maturity
       description: Improving strategies for writing scientific software that is efficient, scalable, and portable—from laptops to emerging extreme-scale 
        architectures—while preserving other code quality metrics such as correctness and usability.
 
@@ -222,33 +222,77 @@ survey:
           - Utilize a programming model designed for portability (e.g. OpenACC, OpenMP)
           - Re-writing the application to utilize an advanced portability library (e.g. Kokkos)
         
-    - name: Better Reliability
-      path: reliability
+    - name: Reproducibility
+      path: reproducibility
       description: Improving methods of testing and verification to ensure that software is robust and produces reliable results, thereby 
        helping to ensure the integrity of research and enable collaboration across teams.
 
       items:
-       - name: Testing
-         path: testing
-         description: The process of ensuring that a software product is meeting its requirements at each stage of development, delivery, and deployment. 
-          Testing helps to avoid defects and verify correctness.
+       - name: Release Strategy
+         path: release_strategy
+         description: How do you identify releases of the software?
          questions:
-          - Not currently being used
-          - Comparison used to create system-level no-change tests
-          - Unit testing for refactored and new code
-          - Continuous integration
+          - None
+          - Use version numbers
+          - Version numbers plus tags
+          - Create DOI for every release
 
-       - name: Reproducibility
-         path: reproducibility
-         description: Any effort whose goal is to increase trustworthiness and reuse of computational capabilities and results and to ensure correctness.
+       - name: Open Science Platform
+         path: open_science_platform
+         description: Has the software been submitted to an open science platform (e.g. DOE Code)?
          questions:
-          - Not currently being used
-          - Publication of code
-          - Inclusion of data when code is published
-          - The entire provenance of the application and its execution environment is published
+          - Not submittied
+          - Software is proprietary/restricted
+          - Yes, but for listing only
+          - Yes
+          
+       - name: License
+         path: license
+         description: Does the software have an OSI approved license?
+         questions:
+          - No/default license
+          - Software is proprietary/restricted
+          - Open source but not OSI approved
+          - Yes
 
-    - name: Better Collaboration
-      path: collaboration
+       - name: Repository Type
+         path: repository_type
+         description: What type of repository is the software available from?
+         questions:
+          - None/private repository
+          - Software made available on request
+          - Privately run open repository
+          - Public open source repository
+
+       - name: Accessibility
+         path: accessibility
+         description: Are there requirements for accessing the issue tracker?
+         questions:
+          - No external access
+          - Registration process to allow access for approved users
+          - Creation of issues requires authorization
+          - Reading and creation of issues without authorization
+
+       - name: Certification
+         path: certification
+         description: Has the code been certified for computational reproducibility? (e.g. Code Ocean's verification process)
+         questions:
+          - No certification
+          - Preparing for certification
+          - In-house certified
+          - Externally certified
+
+       - name: Reproducibile Build
+         path: reproducibile_build
+         description: Does the software have a reproducible build?
+         questions:
+          - Not assessed
+          - Public package manager used in build
+          - Controlled build environment used
+          - Yes
+
+    - name: Other Assessments
+      path: other_assessments
       description: Improving ways to facilitate work across teams and to promote partnerships and community contributions via software. 
         We consider projects of all sizes, from small teams through multi-institutional aggregate teams.
       items:
