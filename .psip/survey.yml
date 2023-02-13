@@ -53,6 +53,7 @@ survey:
        - name: Engagement
          path: engagement
          description: How would you rate the engagement with forms or scales of data?
+         questions:
           - None/Unknown
           - Incremental
           - Breakthrough
