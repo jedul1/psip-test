@@ -27,51 +27,51 @@ survey:
       items:
        - name: Novelty
          path: novelty
-         description: How would you rate the novelty of the algorithm?
+         description: How would you rate the novelty of the algorithm (innovation)?
          questions:
-          - None/Unknown
-          - Incremental
-          - Breakthrough
-          - Transformative
+          - There is no novelty or the novelty is unknown
+          - An incremental improvement over existing algorithms
+          - A breakthrough compared with existing algorithms
+          - A transformative change compared with existing algorithms
        - name: Impact
          path: impact
          description: How would you rate the impact on research methods?
          questions: 
-          - None/Unknown
-          - Incremental
-          - Breakthrough
-          - Transformative
+          - There is no impact or the impact is unknown
+          - An incremental improvement on existing research methods
+          - A breakthrough compared with existing research methods
+          - A transformative change compared with existing research methods
        - name: Originality
          path: originality
-         description: How would you rate the originality of the solution?
+         description: How would you rate the originality of the solution (inventive)?
          questions:
-          - None/Unknown
-          - Incremental
-          - Breakthrough
-          - Transformative
+          - The solution is not original or the originality is unknown
+          - Contains some original aspects
+          - Contains many original aspects
+          - Is a wholely original solution
        - name: Engagement
          path: engagement
          description: How would you rate the engagement with forms or scales of data?
          questions:
-          - None/Unknown
-          - Incremental
-          - Breakthrough
-          - Transformative
-       - name: Improvement
-         path: improvement
+          - Does not engage with data or this is unknown
+          - Incremental improvement
+          - Breakthrough improvement
+          - Transformative change
+       - name: Capability
+         path: capability
          description: How would you rate the improvement in the scale, resolution, or accuracy at which research can be performed?
          questions:
-          - None/Unknown
-          - Incremental
-          - Breakthrough
-          - Transformative
+          - Does not improve capability or this is unknown
+          - Incremental improvement
+          - Breakthrough improvement
+          - Transformative change
        - name: Intellectual Property
          path: intellectual_property
          description: Is the software covered by any patents? How many?
          questions:
           - Unknown
           - No patents
-          - One patent
+          - One patentscale 
           - Two or more patents
 
     - name: Significance
