@@ -193,6 +193,48 @@ survey:
        architectures—while preserving other code quality metrics such as correctness and usability.
 
       items:
+       - name: Code Standards
+         path: code_standards
+         description: To what extent does the software have clearly defined coding standards and guidelines?
+         questions:
+          - No/ad-hoc coding standards
+          - Coding standards are encouraged
+          - Coding standards have been clearly documented
+          - Coding standards are enforced
+       - name: Code Analysis Tools
+         path: code_analysis_tools
+         description: What type of code analysis tools are regularly used on the software?
+         questions:
+          - Code analysis tools are not used
+          - Basic static analysis (e.g. linting)
+          - Basic and advanced static analysis (e.g. quality, security)
+          - Dynamic and static analysis
+       - name: Programming Paradigm
+         path: programming_paradigm
+         description: What type of programming paradigm is used by the software?
+         questions:
+          - No specific paradigm/unstructured
+          - Code must be procedural
+          - Code is encouraged to follow object oriented design principles
+          - Code must follow object oriented design principles
+       - name: Code Reuse
+         path: code_reuse
+         description: What is the reuse readiness level of the code?
+         questions:
+          - Not reusable
+          - May be reusable at a high cost
+          - Reusable at some cost
+          - Proved/demonstrated reusability          
+       - name: Code Complexity
+         path: code_complexity
+         description: What is the highest [cylomatic complexity](https://doi.org/10.6028/NIST.SP.500-235) reported by a [tool](https://marketplace.visualstudio.com/items?itemName=selcuk-usta.code-complexity-report-generator)?
+         questions:
+          - Unknown/not calculated
+          - Low (< 5)
+          - Medium (5 - 10)
+          - High (> 10)
+          
+      items:
        - name: Performance Testing
          path: performance_testing
          description: Determining the speed, scalability, reliability, and stability of an application under a variety of workloads.
