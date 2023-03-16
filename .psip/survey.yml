@@ -342,16 +342,16 @@ survey:
           
        - name: Performance Testing
          path: performance_testing
-         description: Determining the speed, scalability, reliability, and stability of an application under a variety of workloads.
+         description: Do you test your software to determine the speed, scalability, reliability, and stability under a variety of workloads?
          questions:
           - Not currently being used
-          - Conducts performance tests
+          - Conduct performance tests
           - Automated performance tests are run regularly
-          - Uses performance profiling tools to guide performance-related improvements
+          - Use performance profiling tools to guide performance-related improvements
        - name: Performance Regression Testing
          path: performance_regression_testing
-         description: Undertaking testing that exercises performance capabilities combined with plans for how to make practical use of 
-          that performance data
+         description: Do you undertaking testing that exercises performance capabilities combined with plans for how to make practical use of 
+          that performance data?
          questions:
           - Not currently being used
           - A testable primary use case and set of measurements are established
@@ -359,14 +359,30 @@ survey:
           - Performance tracking is run and reviewed at regular intervals on relevant platforms 
        - name: Performance Portability
          path: performance_portability
-         description: Software exhibiting similar performance across multiple platforms, with the time to solution 
-          reflecting efficient utilization of computational resources on each platform. 
+         description: Does the software exhibiting similar performance across multiple platforms, with the time to solution 
+          reflecting efficient utilization of computational resources on each platform?
          questions:
           - Not currently being used
           - Utilize a standard parallel programming model (e.g. MPI)
           - Utilize a programming model designed for portability (e.g. OpenACC, OpenMP)
           - Re-writing the application to utilize an advanced portability library (e.g. Kokkos)
-        
+       - name: Resource Optimization
+         path: performance_resources
+         description: Does the software optimize various aspects of resource usage eg. network bandwidth, memory footprint, latency, etc?
+         questions:
+          - Not considered
+          - Some aspects have been considered for optimization
+          - Optimization of most apsects has been undertaken
+          - All relevent aspects have been optimized
+       - name: Time to Solution
+         path: performance_timetosolution
+         description: For a given problem, does the time to solution meet the software's target?
+         questions:
+          - Not considered/measured
+          - Working towards meeting targets
+          - Meets targets for some problems
+          - Meets or exceeds time to solution targets
+          
     - name: Reproducibility
       path: reproducibility
       description: Improving methods of testing and verification to ensure that software is robust and produces reliable results, thereby 
