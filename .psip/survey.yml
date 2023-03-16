@@ -210,7 +210,7 @@ survey:
           - Basic and advanced static analysis (e.g. quality, security)
           - Dynamic and static analysis
        - name: Programming Paradigm
-         path: programming_paradigm
+         path: code_programming_paradigm
          description: What type of programming paradigm is used by the software?
          questions:
           - No specific paradigm/unstructured
@@ -233,6 +233,39 @@ survey:
           - Low (< 5)
           - Medium (5 - 10)
           - High (> 10)
+          
+       - name: Developer Documentation
+         path: doc_developer
+         description: How would you describe the documentation available for a developer to understand how the software works?
+         questions:
+          - No documentation
+          - Ad-hoc documentation
+          - Partial documentation and/or under development
+          - Clear, concise and complete documenation     
+       - name: User Documentation
+         path: doc_user
+         description: How would you describe the user documentation that describes how to run/use the software?
+         questions:
+          - No documentation
+          - Ad-hoc documentation
+          - Partial documentation and/or under development
+          - Clear, concise and complete documenation
+       - name: Contribution Guidelines
+         path: doc_contribution
+         description: How would you describe the contribution guidelines documentation?
+         questions:
+          - No documentation
+          - Ad-hoc documentation
+          - Partial documentation and/or under development
+          - Clear, concise and complete documenation          
+       - name: Documentation Management
+         path: doc_management
+         description: How is the documentation managed?
+         questions:
+          - No documentation management
+          - Kept in a known location
+          - Some documenation under revision control
+          - All documentation under revision control     
           
        - name: Performance Testing
          path: performance_testing
