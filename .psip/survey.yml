@@ -234,7 +234,6 @@ survey:
           - Medium (5 - 10)
           - High (> 10)
           
-      items:
        - name: Performance Testing
          path: performance_testing
          description: Determining the speed, scalability, reliability, and stability of an application under a variety of workloads.
