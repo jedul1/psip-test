@@ -150,8 +150,8 @@ survey:
           - Cited a medium number of times - O(10)
           - Cited a significant number of times - O(100)+
        
-       - name: Influence
-         path: influence
+       - name: Dependency
+         path: dependency
          description: What is the number of times the software is listed as a dependency, is extended, or is used by other software?
          questions:
           - None/Unknown
