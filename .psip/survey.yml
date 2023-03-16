@@ -266,6 +266,79 @@ survey:
           - Kept in a known location
           - Some documenation under revision control
           - All documentation under revision control     
+
+       - name: Development Methodology
+         path: process_methodology
+         description: What type of *documented* software development methodology is used?
+         questions:
+          - None/not documented
+          - Simple, sequential process
+          - Iterative process
+          - Agile process
+       - name: Maturity Assessment
+         path: process_assessment
+         description: How often are the maturity criteria of the software assessed?
+         questions:
+          - Never/not assessed
+          - Occasionally
+          - On a regular basis
+          - On a continous basis
+       - name: Requirements Gathering
+         path: process_requirements
+         description: What requirements gathering process is used?
+         questions:
+          - None/not collected
+          - Ad-hoc/as needed
+          - Requirements gathered at the start of the project
+          - Functional and non-functional requirements gathered and documented iteratively
+       - name: Software Design
+         path: process_design
+         description: When is the software design captured and documented?
+         questions:
+          - An ad-hoc design process is used
+          - After development is completed
+          - Prior to development commencing
+          - As part of an agile development process
+       - name: Code Reviews
+         path: process_reviews
+         description: What are the code review requirements?
+         questions:
+          - Code reviews are not used
+          - Ad-hoc code reviews
+          - Code contribuitions are reviewed but the process is not documented	
+          - A documented process is followed for every code contribution
+       - name: Testing Strategy
+         path: process_testing
+         description: Is there a documented test strategy?
+         questions:
+          - No documented strategy
+          - Testing is not documented and done on an ad-hoc/as needed basis
+          - The testing strategy is partially documented
+          - The testing strategy is fully documented
+       - name: On/Off-Boarding
+         path: process_onoffboarding
+         description: Is there a documented on-boarding/off-boarding process?
+         questions:
+          - None/not documented
+          - Done on an ad-hoc basis
+          - Partially documented
+          - Fully docuemented
+       - name: Process Document Control
+         path: process_documents
+         description: Are the project process documents under revision control?
+         questions:
+          - None/not documented
+          - Documents are kept in a known location
+          - Partially under revision control
+          - Fully under revision control
+       - name: Work Tracking
+         path: process_tracking
+         description: How is work on the project tracked and managed?
+         questions:
+          - None/not tracked
+          - Using ad-hoc methods
+          - Using an issue tracking system (e.g. GitLab)
+          - Dedicated project management system (e.g. IBM CLM)
           
        - name: Performance Testing
          path: performance_testing
@@ -275,7 +348,6 @@ survey:
           - Conducts performance tests
           - Automated performance tests are run regularly
           - Uses performance profiling tools to guide performance-related improvements
-      
        - name: Performance Regression Testing
          path: performance_regression_testing
          description: Undertaking testing that exercises performance capabilities combined with plans for how to make practical use of 
@@ -285,7 +357,6 @@ survey:
           - A testable primary use case and set of measurements are established
           - The performance history of the tests are tracked over time
           - Performance tracking is run and reviewed at regular intervals on relevant platforms 
-      
        - name: Performance Portability
          path: performance_portability
          description: Software exhibiting similar performance across multiple platforms, with the time to solution 
