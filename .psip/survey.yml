@@ -69,10 +69,10 @@ survey:
          path: intellectual_property
          description: Is the software covered by any patents? How many?
          questions:
-          - Unknown
+          - The software is not patentable
           - No patents
-          - One patentscale 
-          - Two or more patents
+          - One patent
+          - More than one patents
 
     - name: Significance
       path: significance
