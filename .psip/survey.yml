@@ -382,7 +382,56 @@ survey:
           - Working towards meeting targets
           - Meets targets for some problems
           - Meets or exceeds time to solution targets
-          
+
+       - name: Test Suite
+         path: testing_suite
+         description: How would you best describe the test suite?
+         questions:
+          - No testing undertaken
+          - Manual/ad-hoc tests
+          - Combination of manual and automated tests
+          - Fully automated tests
+       - name: Test Types
+         path: testing_types
+         description: What types of tests does the software have?
+         questions:
+          - No testing undertaken
+          - Combination of unit/integration/system tests
+          - Regression testing
+          - Verification/validation
+       - name: Test Coverage
+         path: testing_coverage
+         description: What is the testing code coverage?
+         questions:
+          - No testing undertaken
+          - < 50%
+          - 50% - 80%
+          - > 80%
+       - name: Continuous Integration
+         path: testing_ci
+         description: To what extent is continuous integration used?
+         questions:
+          - Not used
+          - Code is automatically built
+          - Automated tests run when code is merged
+          - Code can only be merged if automated tests have successfully run
+       - name: Testing Policy
+         path: testing_policy
+         description: Is there a test policy for code contribution?
+         questions:
+          - Not used
+          - Tests are sometimes provided but not required
+          - Tests are only required for certain changes
+          - Tests are required for every new feature
+       - name: Test Development
+         path: testing_development
+         description: When are tests developed?
+         questions:
+          - Not used
+          - Implementation is done first and then tests are written
+          - Tests and implementation are done at roughly the same time	
+          - Before requirements are implemented (TDD)
+
     - name: Reproducibility
       path: reproducibility
       description: Improving methods of testing and verification to ensure that software is robust and produces reliable results, thereby 
@@ -397,7 +446,6 @@ survey:
           - Use version numbers
           - Version numbers plus tags
           - Create DOI for every release
-
        - name: Open Science Platform
          path: open_science_platform
          description: Has the software been submitted to an open science platform (e.g. DOE Code)?
@@ -405,8 +453,7 @@ survey:
           - Not submittied
           - Software is proprietary/restricted
           - Yes, but for listing only
-          - Yes
-          
+          - Yes         
        - name: License
          path: license
          description: Does the software have an OSI approved license?
@@ -415,7 +462,6 @@ survey:
           - Software is proprietary/restricted
           - Open source but not OSI approved
           - Yes
-
        - name: Repository Type
          path: repository_type
          description: What type of repository is the software available from?
@@ -424,7 +470,6 @@ survey:
           - Software made available on request
           - Privately run open repository
           - Public open source repository
-
        - name: Accessibility
          path: accessibility
          description: Are there requirements for accessing the issue tracker?
@@ -433,7 +478,6 @@ survey:
           - Registration process to allow access for approved users
           - Creation of issues requires authorization
           - Reading and creation of issues without authorization
-
        - name: Certification
          path: certification
          description: Has the code been certified for computational reproducibility? (e.g. Code Ocean's verification process)
@@ -442,7 +486,6 @@ survey:
           - Preparing for certification
           - In-house certified
           - Externally certified
-
        - name: Reproducibile Build
          path: reproducibile_build
          description: Does the software have a reproducible build?
