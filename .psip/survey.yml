@@ -404,9 +404,9 @@ survey:
          description: What is the testing code coverage?
          questions:
           - No testing undertaken
-          - < 50%
-          - 50% - 80%
-          - > 80%
+          - '< 50%'
+          - '50% - 80%'
+          - '> 80%'
        - name: Continuous Integration
          path: testing_ci
          description: To what extent is continuous integration used?
