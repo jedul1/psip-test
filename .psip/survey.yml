@@ -1,6 +1,7 @@
 survey:
    name: Scientific Software Excellence Assessment
    description: A tool that allows developers to assess their progress towards sustainable and quality code using software engineering best practices.
+   version: 1.0.0
 
    scores:
     - name: None
@@ -26,7 +27,7 @@ survey:
       description: This section examines the extent to which the software project makes an important and innovative contribution to understanding and knowledge in the field.  
       items:
        - name: Novelty
-         path: novelty
+         path: orig_novelty
          description: How would you rate the novelty of the algorithm (innovation)?
          questions:
           - There is no novelty or the novelty is unknown
@@ -34,7 +35,7 @@ survey:
           - A breakthrough compared with existing algorithms
           - A transformative change compared with existing algorithms
        - name: Impact
-         path: impact
+         path: orig_impact
          description: How would you rate the impact on research methods?
          questions: 
           - There is no impact or the impact is unknown
@@ -42,7 +43,7 @@ survey:
           - A breakthrough compared with existing research methods
           - A transformative change compared with existing research methods
        - name: Originality
-         path: originality
+         path: orig_originality
          description: How would you rate the originality of the solution (inventive)?
          questions:
           - The solution is not original or the originality is unknown
@@ -50,7 +51,7 @@ survey:
           - Contains many original aspects
           - Is a wholely original solution
        - name: Engagement
-         path: engagement
+         path: orig_engagement
          description: How would you rate the engagement with forms or scales of data?
          questions:
           - Does not engage with data or this is unknown
@@ -58,7 +59,7 @@ survey:
           - Breakthrough improvement
           - Transformative change
        - name: Capability
-         path: capability
+         path: orig_capability
          description: How would you rate the improvement in the scale, resolution, or accuracy at which research can be performed?
          questions:
           - Does not improve capability or this is unknown
@@ -66,7 +67,7 @@ survey:
           - Breakthrough improvement
           - Transformative change
        - name: Intellectual Property
-         path: intellectual_property
+         path: orig_intellectual_property
          description: Is the software covered by any patents? How many?
          questions:
           - The software is not patentable
@@ -79,7 +80,7 @@ survey:
       description: This section examines the extent to which the software project has influenced, or has the capacity to influence, knowledge and scholarly thought, or the development and understanding of policy and/or practice.
       items:
        - name: Advancement
-         path: advancement
+         path: sig_advancement
          description: How would you rate the ability of the software to enable or accelerate research advances?
          questions:
           - None/Unknown
@@ -88,7 +89,7 @@ survey:
           - Accelerates a significant number of research advances
           
        - name: Enablement
-         path: enablement
+         path: sig_enablement
          description: How would you rate the ability of the software to enable research or thinking that was not previously possible?
          questions:
           - None/Unknown
@@ -97,7 +98,7 @@ survey:
           - Enables a significant amount of research
 
        - name: Influence
-         path: influence
+         path: sig_influence
          description: How would you rate the ability of the software to software influence policy, practice, or users/audiences?
          questions:
           - None/Unknown
@@ -105,8 +106,8 @@ survey:
           - Has a moderate influence
           - Has a significant influence
 
-       - name: Diversity
-         path: diversity
+       - name: Scientific Diversity
+         path: sig_diversity
          description: To what extent is the software being used across a diverse range of disciplines?
          questions:
           - None/Unknown
@@ -115,7 +116,7 @@ survey:
           - Broadly across many disciplines
 
        - name: User Community
-         path: user_community
+         path: sig_user_community
          description: What would you estimate is the user community size for the software?
          questions:
           - None/Unknown
@@ -124,7 +125,7 @@ survey:
           - Large community - O(100)+
 
        - name: Developer Community
-         path: developer_community
+         path: sig_developer_community
          description: What would you estimate is the developer community size for the software?
          questions:
           - None/Unknown
@@ -133,7 +134,7 @@ survey:
           - Large community - O(100)+
           
        - name: Sustainability
-         path: sustainability
+         path: sig_sustainability
          description: What is the level of funding sustainability?
          questions:
           - Exploratory/Unfunded
@@ -142,7 +143,7 @@ survey:
           - Community supported with ongoing funding
        
        - name: Publication Citations
-         path: publication_citations
+         path: sig_publication_citations
          description: What is the number of publication citations for the software?
          questions:
           - None/Unknown
@@ -151,7 +152,7 @@ survey:
           - Cited a significant number of times - O(100)+
        
        - name: Dependency
-         path: dependency
+         path: sig_dependency
          description: What is the number of times the software is listed as a dependency, is extended, or is used by other software?
          questions:
           - None/Unknown
@@ -160,7 +161,7 @@ survey:
           - Used a significant number of times - O(100)+
        
        - name: Criticality Score
-         path: criticality_score
+         path: sig_criticality_score
          description: What is the software's criticality score?
          questions:
           - Unknown
@@ -169,7 +170,7 @@ survey:
           - Greater than 0.8
        
        - name: User Satisfaction
-         path: user_satisfaction
+         path: sig_user_satisfaction
          description: What is the user satisfaction rating for the software?
          questions:
           - Unknown
@@ -178,7 +179,7 @@ survey:
           - Users are very satisfied
           
        - name: Sponsor Satisfaction
-         path: sponsor_satisfaction
+         path: sig_sponsor_satisfaction
          description: What is the sponsor satisfaction rating for the software?
          questions:
           - Unknown
@@ -464,7 +465,7 @@ survey:
 
       items:
        - name: Release Strategy
-         path: release_strategy
+         path: repro_release_strategy
          description: How do you identify releases of the software?
          questions:
           - None
@@ -472,7 +473,7 @@ survey:
           - Version numbers plus tags
           - Create DOI for every release
        - name: Open Science Platform
-         path: open_science_platform
+         path: repro_open_science_platform
          description: Has the software been submitted to an open science platform (e.g. DOE Code)?
          questions:
           - Not submittied
@@ -480,7 +481,7 @@ survey:
           - Yes, but for listing only
           - Yes         
        - name: License
-         path: license
+         path: repro_license
          description: Does the software have an OSI approved license?
          questions:
           - No/default license
@@ -488,7 +489,7 @@ survey:
           - Open source but not OSI approved
           - Yes
        - name: Repository Type
-         path: repository_type
+         path: repro_repository_type
          description: What type of repository is the software available from?
          questions:
           - None/private repository
@@ -496,7 +497,7 @@ survey:
           - Privately run open repository
           - Public open source repository
        - name: Accessibility
-         path: accessibility
+         path: repro_accessibility
          description: Are there requirements for accessing the issue tracker?
          questions:
           - No external access
@@ -504,7 +505,7 @@ survey:
           - Creation of issues requires authorization
           - Reading and creation of issues without authorization
        - name: Certification
-         path: certification
+         path: repro_certification
          description: Has the code been certified for computational reproducibility? (e.g. Code Ocean's verification process)
          questions:
           - No certification
@@ -512,7 +513,7 @@ survey:
           - In-house certified
           - Externally certified
        - name: Reproducibile Build
-         path: reproducibile_build
+         path: repro_reproducibile_build
          description: Does the software have a reproducible build?
          questions:
           - Not assessed
