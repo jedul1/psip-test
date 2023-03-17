@@ -432,6 +432,31 @@ survey:
           - Tests and implementation are done at roughly the same time	
           - Before requirements are implemented (TDD)
 
+       - name: Security Assessment
+         path: security_assessment
+         description: When do you assess security and address security-related issues in the software?
+         questions:
+          - Security is not assessed
+          - On an ad-hoc basis or when incidents occur
+          - At the start of the design/development
+          - As part of the software development lifecycle
+       - name: Security Principles
+         path: security_principles
+         description: Does the software implement secure design principles?
+         questions:
+          - Security is not considered
+          - When issues are observed
+          - During implementation
+          - As part of the design process
+       - name: Security Reviews
+         path: security_reviews
+         description: When do you perform security reviews of the software?
+         questions:
+          - Security is not reviewed
+          - When a vulnerability is discovered
+          - On a regular but infrequent basis
+          - As part of the software development lifecycle
+          
     - name: Reproducibility
       path: reproducibility
       description: Improving methods of testing and verification to ensure that software is robust and produces reliable results, thereby 
