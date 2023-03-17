@@ -522,24 +522,45 @@ survey:
 
     - name: Other Assessments
       path: other_assessments
-      description: Improving ways to facilitate work across teams and to promote partnerships and community contributions via software. 
-        We consider projects of all sizes, from small teams through multi-institutional aggregate teams.
+      description: Other assessments that may have been undertaken for the software project.
       items:
-       - name: Virtual Tools
-         path: virtual_tools
-         description: The process of documenting and sharing team products and artifacts with virtual tools (e.g. Jira, Google Docs) to
-          communicate goals, objectives.
+       - name: OpenSSF Badge
+         path: other_openssf
+         description: Does the software have an [Open Source Security Foundation (OpenSSF) Best Practices badge](https://bestpractices.coreinfrastructure.org/en/criteria)? If so, which one? 
          questions:
-          - Not currently being used
-          - Used occasionally
-          - Used on a regualar basis in order to improve processes
-          - Used strategically to facilitate asynchronous and synchronous communication in order to build trust through transparency
-
-       - name: Telecommuting Communication Practices
-         path: telecommuting_communication_practices
-         description: The use of video and audio conferencing technology for co-located, hybrid (co-located + remote), or distributed teams.
+          - Assessment has not been undertaken
+          - Passing badge
+          - Silver badge
+          - Gold badge
+       - name: Software Journal
+         path: other_journal
+         description: Has the software been published in a software journal?
          questions:
-          - Not currently being used
-          - Audio conferencing and/or video conferencing tools for audio only or occasional video use
-          - Use of video conferencing with defined inclusivity guidelines
-          - Team awareness of inclusive practices in the use of video conferencing combined with utlizing advanced communication features (e.g. voting, sketch pads)
+          - Has not been published
+          - Under review
+          - Published
+          - Published in more than one journal
+       - name: Software Sustainability Institute
+         path: other_ssi
+         description: Has the software undertaken the Software Sustainability Institute's online [sustainability evaluation](https://www.software.ac.uk/resources/online-sustainability-evaluation)?
+         questions:
+          - Has not been assessed
+          - Have plans to undertake assessment
+          - An assessment has been completed
+          - Assessment is done on a continual basis
+       - name: ACM Artifact Badge
+         path: other_acm
+         description: Does the software have an [ACM Artifact badge](https://www.acm.org/publications/policies/artifact-review-and-badging-current)?
+         questions:
+          - Has not been assessed
+          - Artifacts Evaluated
+          - Artifacts Available
+          - Artifacts Reproduced/Replicated
+       - name: E4S Membership Criteria
+         path: other_e4s
+         description: Does the software conform to the E4S Membership Criteria?
+         questions:
+          - Has not been assessed
+          - Conforms to some of the criteria
+          - Conforms to all of the published critera
+          - Conforms to all published and some future criteria
