@@ -1,6 +1,6 @@
 survey:
    name: Scientific Software Excellence Assessment
-   description: A tool that allows developers to assess their progress towards sustainable and quality code using software engineering best practices.
+   description: This assessment tool allows developers to deterime their progress towards sustainable and quality code using software engineering best practices.
    version: 1.0.0
 
    scores:
